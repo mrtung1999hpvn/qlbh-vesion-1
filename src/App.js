@@ -344,10 +344,10 @@ function App() {
     }
   }else{
     return (
-      <> 
+      <React.Fragment> 
         <h1 style={{color:"black"}}>HTTP 404 NOT FOUND</h1>
         <h4 style={{color:"black"}}>Can't not connect server</h4>
-      </>
+      </React.Fragment>
     )
   }
 }
