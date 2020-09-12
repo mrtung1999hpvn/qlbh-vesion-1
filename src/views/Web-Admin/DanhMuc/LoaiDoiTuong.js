@@ -4,7 +4,9 @@ import { ExampleWrapperSimple } from '../../../layout-components';
 import { PageTitle } from '../../../layout-components';
 import DanhSach from '../../../components/Web-Admin/DanhMuc/LoaiDoiTuong/DanhSachLoaiDoiTuong'
 function DashboardDefault() {
- 
+  const getData = async ()=>{
+    
+  }
   
   return (
     <Fragment>
