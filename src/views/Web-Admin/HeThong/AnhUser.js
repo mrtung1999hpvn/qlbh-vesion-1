@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,Fragment } from 'react';
 import { Card, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { storage } from '../../../firebase';
@@ -151,7 +151,7 @@ function AnhUser({ _OnCheckUpdateImage }) {
 
         <div className="col">
           {!OnCheckUpdateImage ? (
-            <>
+            <Fragment>
               <LinearProgress
                 hidden={onClickUpdate}
                 variant="buffer"
@@ -164,9 +164,9 @@ function AnhUser({ _OnCheckUpdateImage }) {
                   {progress !== 100 ? 'Thực hiện lưu file ảnh '+ progress + ' % . . .' : 'Hoàn thành'}
                 </span>
               </div>
-            </>
+            </Fragment>
           ) : (
-            <></>
+            <Fragment></Fragment>
           )}
         </div>
       </div>
